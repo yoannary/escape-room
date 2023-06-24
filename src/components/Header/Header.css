@@ -1,0 +1,76 @@
+.Header {
+  width: 100%;
+  height: 8em;
+  margin: auto;
+  display: flex;
+  background-color: #d6824e;
+  justify-content: space-between;
+  /* position: absolute; */
+  top: 0;
+}
+
+.logo-section {
+  display: flex;
+  margin: auto;
+  justify-content: left;
+  width: 15%;
+}
+
+.logo-section img {
+  width: 300px;
+  height: 25%;
+}
+
+.nav-section {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+}
+
+.navBar {
+  height: 46px;
+  width: 250px;
+  display: flex;
+  margin: auto;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 30px;
+  border-radius: 15px;
+  font-family: var(--main-font);
+  justify-content: center;
+}
+
+.navBar a {
+  color: white;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  width:auto;
+  padding: 0px 20px 10px 20px;
+}
+
+.login-section {
+  min-width: 13%;
+  max-width: 25%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.username-section {
+  display: flex;
+  margin: auto;
+  margin-left: 0;
+}
+
+.username-section .username-text {
+  color: white;
+  display: flex;
+  margin: auto;
+  font-size: 25px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+

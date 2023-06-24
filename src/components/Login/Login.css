@@ -1,0 +1,18 @@
+.login-form-body {
+  height: 300px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.login-form-body label {
+  display: flex;
+  font-size: 18px !important;
+}
+
+.Login button {
+  display: flex;
+  font-size: 20px !important;
+}

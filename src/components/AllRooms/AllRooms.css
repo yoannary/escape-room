@@ -1,0 +1,139 @@
+.AllRooms {
+  min-height: 92vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #FAF6ED;
+}
+
+.room-section {
+  width: 70%;
+  height: 30em;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 30px;
+  /* background-color: #CD9D77 ; */
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.room-section:nth-child(odd) {
+  background-color: #724330 ;
+
+}
+
+.room-section:nth-child(even) {
+  background-color: #CD9D77 ;
+
+}
+
+.room-title {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.room-left-section {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.room-info-section {
+  width: 65%;
+  display: flex;
+  justify-content: space-evenly;
+  /* margin: auto; */
+}
+
+.details-section {
+  height: 95%;
+  width: 50%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  /* background-color: #CD9D77; */
+  border-radius: 15px;
+}
+
+.room-info-section .details-title {
+  color: white;
+  font-size: 2em;
+  padding: 10px;
+  border-bottom: 2px solid white;
+}
+
+.details-body {
+  padding: 30px;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.details-body .left-column,
+.details-body .right-column {
+  height: 97%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 0;
+  justify-content: space-between;
+}
+
+.details-body .left-column .column-key {
+  /* color: #724330; */
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.details-body .right-column .column-key{
+  font-size: 1.5em;
+}
+
+.description-section {
+  height: 95%;
+  width: 40%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.room-section:nth-child(odd) .description-section,
+.room-section:nth-child(odd) .details-section {
+  background-color: #E8D0B3;
+}
+.room-section:nth-child(odd) .column-key {
+  color: #724330;
+  border-bottom: 2px solid #724330;
+}
+.room-section:nth-child(odd) .details-title,
+.room-section:nth-child(odd) .description-section .details-body {
+  color: #724330;
+}
+
+.room-section:nth-child(even) .description-section .details-body {
+  color: white;
+}
+
+.description-section .details-body {
+  font-size: 1.2em;
+}
+
+.room-section:nth-child(even) .description-section,
+.room-section:nth-child(even) .details-section {
+  background-color: #724330;
+}
+.room-section:nth-child(even) .column-key {
+  color: white;
+  border-bottom: 2px solid #CD9D77;
+}
+
