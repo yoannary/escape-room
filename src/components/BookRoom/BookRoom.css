@@ -1,0 +1,59 @@
+.BookRoom {
+  min-height: 92vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #FAF6ED;
+}
+.book-room-title {
+  width: 80%;
+  height: 15%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 0;
+  justify-content: center;
+  font-size: 3em;
+  color: #724330;
+  font-weight: bold;
+}
+.book-room-section {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  margin: auto;
+  width: 80%;
+  height: 60%;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.room-card {
+  height: 50vh;
+  background-color: #967E76;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 27%;
+  padding: 30px 15px;
+}
+
+.book-section {
+  height: 40%;
+  width: 90%;
+  background-color: #FAF6ED;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.book-section .book-data {
+  width: 80%;
+  padding: 15px 25px;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #423030;
+}

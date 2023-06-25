@@ -45,19 +45,17 @@ const Header = () => {
         <div className="navBar">
           <NavLink to="/all-rooms">All Rooms</NavLink>
         </div>
-        <div className="navBar">
-          <NavLink to="/about">About us</NavLink>
-        </div>
-        <div className="navBar">
-          <NavLink to="/contacts">Contacts</NavLink>
-        </div>
-
         {userData ? (
           <div className="navBar">
             <NavLink to="/book-a-room">Book a room</NavLink>
           </div>
         ) : null}
-        {/* {!user || userData?.role === 3 ? null :  <NavLink to="/newaddon">Book a room</NavLink>} */}
+        <div className="navBar">
+          <NavLink to="/about">About the game</NavLink>
+        </div>
+        <div className="navBar">
+          <NavLink to="/contact">Contacts</NavLink>
+        </div>
       </div>
       <div className="login-section">
         {userData ? (
@@ -77,7 +75,6 @@ const Header = () => {
                 {userData.username.slice(0, 1).toUpperCase()}
               </Avatar>
               <div className="username-text">{userData.username}</div>
-              
             </div>
             <Button
               sx={{ fontSize: "25px", fontWeight: "bold", color: "white" }}

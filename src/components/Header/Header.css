@@ -31,7 +31,7 @@
 
 .navBar {
   height: 46px;
-  width: 250px;
+  width: 280px;
   display: flex;
   margin: auto;
   margin-left: 0;
@@ -63,6 +63,7 @@
   display: flex;
   margin: auto;
   margin-left: 0;
+  margin-right: 10px;
 }
 
 .username-section .username-text {

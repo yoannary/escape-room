@@ -25,7 +25,7 @@ export const AllRooms = () => {
     <div className="AllRooms">
       <div className="room-section">
         <div className="room-left-section">
-          <div className="room-title">{allRooms[0].name}</div>
+          <div className="room-title">{allRooms[0]?.name}</div>
 
           <div className="image-section">
             <img
@@ -43,7 +43,7 @@ export const AllRooms = () => {
 
       <div className="room-section">
         <div className="room-left-section">
-          <div className="room-title">{allRooms[1].name}</div>
+          <div className="room-title">{allRooms[1]?.name}</div>
 
           <div className="image-section">
             <img
@@ -60,7 +60,7 @@ export const AllRooms = () => {
 
       <div className="room-section">
         <div className="room-left-section">
-          <div className="room-title">{allRooms[2].name}</div>
+          <div className="room-title">{allRooms[2]?.name}</div>
 
           <div className="image-section">
             <img

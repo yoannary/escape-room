@@ -26,13 +26,29 @@ const Home = () => {
             and book a room now.
           </div>
         </div>
+        <div className="home-image-section">
+          <div>
+            <img
+              className="room-photo"
+              src={require("../../images/home1.png")}
+              alt="img1"
+              width={"80%"}
+              height={"70%"}
+            />
+          </div>
+          <div>
+            <img
+              className="room-photo"
+              src={require("../../images/home2.png")}
+              alt="img1"
+              width={"100%"}
+              height={"70%"}
+            />
+          </div>
+        </div>
         <div className="button-section">
-          {/* <Button type="text"> */}
-            <NavLink to="/register">Register now</NavLink>
-          {/* </Button> */}
-          {/* <Button type="text"> */}
-            <NavLink to="/about-us">About us</NavLink>
-          {/* </Button> */}
+          <NavLink to="/register">Register now</NavLink>
+          <NavLink to="/about-us">About us</NavLink>
         </div>
       </div>
       <Login open={open} handleClose={handleClose} />

@@ -6,11 +6,11 @@ export const fromRoomsDocument = (snapshot) => {
   const roomsDocument = snapshot.val();
   
   return Object.keys(roomsDocument).map((key) => {
-    const addon = roomsDocument[key];
+    const room = roomsDocument[key];
     return {
-      ...addon,
+      ...room,
       id: key,
-      createdOn: new Date(addon.createdOn),
+      bookedBy: room.bookedBy ? Object.keys(room.bookedBy) : [],
     };
   });
 };
@@ -37,10 +37,11 @@ export const getRoomById = async (id) => {
   if (!result.exists()) {
     throw new Error(`Room with id ${id} does not exist!`);
   }
-  const idea = result.val();
-  idea.id = id;
-  idea.createdOn = new Date(idea.createdOn);
-  return idea;
+  const room = result.val();
+  room.id = id;
+  room.bookedBy = room.bookedBy ? Object.keys(room.bookedBy) : [];
+  console.log('room', room);
+  return room;
 };
 
 export const getAllRooms = async () => {
@@ -49,4 +50,13 @@ export const getAllRooms = async () => {
     return [];
   }
   return fromRoomsDocument(snapshot);
+};
+
+export const updateRoomAvailability = (username, id, isAvailable) => {
+  const updateLikes = {};
+  updateLikes[`rooms/${id}/isAvailable`] = isAvailable;
+  updateLikes[`rooms/${id}/bookedBy/${username}`] = !isAvailable;
+  updateLikes[`/users/${username}/bookedRooms/${id}`] = !isAvailable;
+  
+  return update(ref(db), updateLikes);
 };

@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   background-color: #FAF6ED;
+  padding-bottom: 8em;
 }
 
 .room-section {

@@ -23,7 +23,7 @@ export const getUserByUsername = (username) => {
 };
 
 export const createUserUsername = (username, uid, email, password, firstName, lastName, phone) => {
-  return set(ref(db, `users/${username}`), {username, uid, email, password, createdOn: new Date(), role: userRole.BASIC, firstName, lastName, phone});
+  return set(ref(db, `users/${username}`), {username, uid, email, password, createdOn: Date.now(), role: userRole.BASIC, firstName, lastName, phone});
 };
 
 export const getUserData = (uid) => {
