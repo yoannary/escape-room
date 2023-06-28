@@ -77,6 +77,11 @@
   justify-content: space-between;
 }
 
+.details-description-body {
+  text-align: justify;
+  font-size: 1em;
+}
+
 .details-body .left-column,
 .details-body .right-column {
   height: 97%;

@@ -104,7 +104,11 @@ const generateDetailsAndDescription = (roomInfo) => {
 
       <div className="description-section">
         <div className="details-title">Description:</div>
-        <div className="details-body">{roomInfo?.description}</div>
+        <div className="details-body">
+          <div className="details-description-body">
+            {roomInfo?.description}
+          </div>
+        </div>
       </div>
     </div>
   );

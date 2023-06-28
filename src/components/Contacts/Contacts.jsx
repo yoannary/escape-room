@@ -61,7 +61,7 @@ export const Contacts = () => {
               src={require("../../images/AlexY.png")}
               alt="employee2"
               width={"77%"}
-              height={"65%"}
+              height={"60%"}
             />
             <div className="person-card-info">
               <div>Alexander Yanev</div>
